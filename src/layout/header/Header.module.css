@@ -1,0 +1,38 @@
+.header {
+  background-color: rgba(250, 249, 246, 0.1);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  height: 120px;
+}
+.header .logo {
+  width: 150px;
+  background: #d9d9d9;
+  text-align: center;
+}
+.header .submenu:hover, .header .submenu:focus, .header .submenu:active {
+  background: transparent;
+  color: #F8B661;
+}
+.header .submenu .icon {
+  display: block;
+  border: 1px solid #F8B661;
+  width: 20px;
+  height: 20px;
+}
+.header .iconR {
+  display: block;
+  border: 1px solid #F8B661;
+  width: 16px;
+  height: 16px;
+}
+.header :global(.dropdown-menu) {
+  display: flex !important;
+  flex-direction: column;
+  width: 503px;
+  gap: 12px;
+  padding: 45px 40px 40px 30px;
+  background: linear-gradient(#fff, #FCFBFA);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=Header.module.css.map */

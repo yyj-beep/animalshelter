@@ -1,0 +1,214 @@
+/* 테이블 레이아웃 */
+.header {
+  height: 80px;
+  border-radius: 20px;
+}
+
+.content {
+  height: 100px;
+}
+.content .titleBadge {
+  border-radius: 10px;
+}
+
+.content th {
+  font-weight: 400;
+}
+.content .newTag {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.content .icon {
+  width: 24px;
+  height: 24px;
+  color: #333; /* 아이콘 색상 */
+  margin-right: 6px; /* 텍스트와 간격 */
+  vertical-align: middle; /* 텍스트랑 정렬 맞추기 */
+}
+
+.content .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}/*# sourceMappingURL=NoticeBoard.module.css.map */
+
+/* 검색 영역 */
+/* NoticeBoard.module.css */
+.searchBar {
+  width: 424px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #D2914E;
+  border-radius: 999px;
+  padding: 10px 5px;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 0px 16px;
+  background: transparent;
+}
+
+.searchInput::placeholder {
+  color: #BDBDBD;
+}
+
+.searchButton {
+  background: #D2914E;
+  border: none;
+  width: 100px;   /* 버튼의 가로 크기 */
+  height: 40px;   /* 버튼의 세로 크기 */
+  border-radius: 0px 50px 50px 100px;  /* 버튼도형 */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap; /* 모바일 대응 */
+  gap: 12px;
+}
+
+/* 왼쪽 문구 */
+.newsCount {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 5.5px 0; /* 위아래 여백 */
+
+}
+
+.newsNumber {
+  color: #3A7F78; /* 예: SeaGreen */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; /* Extrabold */
+  font-size: 20px;
+}
+
+
+.textWrapper {
+  display: flex;
+  align-items: baseline; /* 핵심! 기준선 정렬 */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px; /* 테이블과의 간격 */
+}
+
+.pageButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* 페이지네이션 숫자 */
+.pageNumber {
+  position: relative;
+  z-index: 2;             /* ✅ 숫자 앞으로! */
+  font-family: 'Poppins', sans-serif;  /* 폰트 지정 */
+  font-weight: 500;                     /* Medium */
+  font-size: 14px;                      /* 원하는 크기 */
+  color: #333;
+
+}
+
+.active .pawIcon {
+  opacity: 1;
+}
+
+/* 발자국 아이콘 (뉴스 카운트용) */
+.pawCountIcon {
+  width: 24px;
+  height: 24px;
+  fill: #FDE8C7;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.pawCountIcon path {
+  fill: #FDE8C7;
+  stroke: #FDE8C7;
+}
+
+/* 발자국 아이콘 (페이지네이션용) */
+.pawIcon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.3; 
+}
+
+.pawIcon path {
+  fill: #FDE8C7;
+  stroke: #FDE8C7;
+}
+
+/* 페이지네이션 스타일 */
+.pageButton {
+  background-color: transparent;
+  border: none;
+  padding: 6px 10px;
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: color 0.2s ease;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

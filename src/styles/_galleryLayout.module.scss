@@ -1,0 +1,23 @@
+.header{
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+
+    @media (min-width:768px){
+        background-size: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+    @media (min-width:320px){
+        background-size: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.headtext{padding-top: 18vh;
+    h3 {white-space: pre-line;
+        padding-top: 10px;
+    }
+}
+

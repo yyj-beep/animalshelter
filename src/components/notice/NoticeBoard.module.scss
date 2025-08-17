@@ -1,0 +1,29 @@
+.header{}
+
+.content{
+
+    th{font-weight:400;}
+
+    .newTag{
+        padding:5px 10px;
+        border-radius: 10px;
+    }
+
+    .icon{
+        width:24px; height:24px;
+        border:1px solid blue;
+    }
+    
+    .title{
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+
+    .eyeIcon {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #007bff;
+  margin-right: 0.25rem;
+}
+}
+

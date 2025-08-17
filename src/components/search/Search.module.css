@@ -1,0 +1,109 @@
+.search {
+  border: 1px solid #3A7F78;
+  border-radius: 100px;
+  padding: 4px;
+}
+.search .form {
+  height: 20px;
+  border: none;
+}
+.search .form:focus {
+  outline: none;
+  box-shadow: none;
+}
+.search .form::-moz-placeholder {
+  color: #BDBDBD;
+}
+.search .form::placeholder {
+  color: #BDBDBD;
+}
+.search .searchBtn {
+  border: none;
+  border-radius: 0px 25px 25px 50px !important;
+  width: 120px;
+  height: 40px;
+  gap: 5px;
+}
+.search .searchBtn .icon {
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+}
+
+.select {
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.select .selectBg {
+  padding: 20px;
+  gap: 12px;
+}
+.select .selectBg .header {
+  margin-top: 15px;
+  width: 100%;
+}
+.select .selectBg .label {
+  color: #707070;
+  cursor: pointer;
+  height: 50px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #FAF9F6;
+}
+.select .selectBg .selectBody {
+  height: 100px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #FAF9F6;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.select .selectBg .selectBody .scroll {
+  padding: 5px 7px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.select .selectBg .selectBody .scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+.select .selectBg .selectBody .scroll::-webkit-scrollbar-thumb {
+  background: #F8B661;
+  border-radius: 3px;
+}
+.select .selectBg .selectBody .scroll .selectItem {
+  position: relative;
+  height: 30px;
+}
+.select .selectBg .selectBody .scroll .selectItem::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #FDE8C7;
+  mix-blend-mode: multiply;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.select .selectBg .selectBody .scroll .selectItem:hover::after {
+  opacity: 0.3;
+}
+.select .selectBg .dropBtn {
+  width: 100px;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+:global(.popover), :global(.popober *) {
+  font-family: "S-CoreDream", sans-serif;
+}
+
+:global(.popover-arrow) {
+  display: none !important;
+}/*# sourceMappingURL=Search.module.css.map */

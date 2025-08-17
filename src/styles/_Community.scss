@@ -1,0 +1,88 @@
+//header 와 body 구분선
+//.line{width: 80%; border: 1px dotted #DADADA; margin: 0 auto;}
+
+//이미지 개별 설정
+.img{
+    max-width: 412px;
+    width: 100%;
+    max-height: 350px ;
+    height: 100vh;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+//묶음 이미지 박스 설정
+.img-wrap{
+    width: 847px; 
+    height: auto; 
+    margin: 0 auto;
+    margin-left: 30px;
+}
+
+/*modal 스타일 변경*/
+
+//모달 전체 너비 변경
+.modal-style{  
+   max-width: 950px; 
+   width: 90%;
+}
+
+//모달 섹션 구분선 설정
+.modal-header{border-bottom: none}
+.modal-footer{border-top: none;}
+
+
+//해시태그 설정
+.tag{ 
+    width: 250px; height: 30px;
+    margin: 48px 0 48px 0;
+    
+}
+.tag-style{
+    width: 60px ;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50px ;
+    margin-right: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+//상단 수정 버튼 설정
+.btn-radius{
+    width: 63px;
+    height: 33px;
+    border-radius: 50px;
+    position: absolute;
+    right: 10px;
+
+}
+
+//sns 댓글 설정
+.commentprofile-wrapper{
+    display: flex;
+    align-items: center;
+
+    .sns-img{position: absolute; left: 2.2vw;}
+    .sns-name{
+        width: 50px; height: 20px ; 
+        border: 1px solid;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4vw;}
+      
+}
+
+.icons-box{
+    display: flex;
+    position: absolute;right: 0; 
+    .star-img{width: 30px; height: 20px; border: 1px solid; }
+    .heart-img{width: 30px; height: 20px; border: 1px solid;}
+    .share-img{width: 30px; height: 20px; border: 1px solid;}    
+}
+
+
+

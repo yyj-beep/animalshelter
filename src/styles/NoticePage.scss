@@ -1,0 +1,86 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+// header, .navbar {
+//   margin-bottom: 0;
+//   padding-bottom: 0;
+// }                         //네비 공백 아예 없게
+
+.notice-page {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+
+.banner {
+  position: relative;
+  height: 440px;
+  background-size: contain;        // ✅ 이미지 전체 보이게 (잘림 없음)
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;      // 이미지 비율 유지하며 꽉 채우기
+
+    @media (min-width:768px){
+      background-size: 100%;
+      object-fit: cover;
+      background-repeat: no-repeat;
+    }
+    @media (min-width:320px){
+        background-size: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+  &__overlay {
+    position: absolute;
+    left: 212px;
+    top: 176px;
+    width: 602px;
+    color: #fff;
+  }
+
+  &__title {
+    white-space: nowrap;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__subtitle {
+    white-space: nowrap;         // 줄바꿈 방지
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0.8rem;
+    line-height: 1.6;
+    max-width: 100%;             // 부모 너비에 맞춤
+    padding: 0;
+    color: #707070;
+     font-weight: 500;      /* Medium */ 
+  }
+
+  .notice-list {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1200px) {
+    &__overlay {
+      left: 10%;
+      top: 20%;
+      width: 80%;
+    }
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+      white-space: normal;       // 모바일에서는 줄바꿈 허용
+    }
+  }
+}

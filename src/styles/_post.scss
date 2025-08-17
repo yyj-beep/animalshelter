@@ -1,0 +1,69 @@
+
+//modal 너비 변경
+/*.postmodal-style{ 
+   max-width: 950px; 
+   width: 90%;
+}*/
+
+//.line{width: 95%; border: 0.75px dotted #DADADA; margin: 0 auto;}
+.img-fluid{
+  width: 350px;
+  height: auto;
+  max-width: 100%;}
+
+
+//info 관련 정렬
+.info-box{margin-left: 30px;}
+//코코브라더스, 모집중 정렬
+.info-title{width: 200px; 
+  display: flex;
+  align-items: center;
+  
+}
+.recruit{width: 50px; height: 20px; 
+  border-radius: 50px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  
+}
+
+.detail-btn{
+  width: 85px; height: 37px; 
+  border-radius: 7px;
+  background-color: #3A7F78;
+  text-align: center;
+  line-height: 37px;
+  color: white;
+  margin-left: 2.5vw;
+}
+.detail-wrap{display: flex;}
+
+.detail-content{margin-left: 1vw;}
+.author-interaction-section{margin-left: 3vw;}
+
+.report-btn{border-radius: 50px;}
+
+
+
+
+
+/* src/styles/_PostModal.scss */
+
+// Bootstrap 변수를 오버라이드하거나 직접 사용
+
+.badge-end {
+  background-color: #FAF9F6 !important;
+  color: #333 !important;
+  font-weight: 500;
+  border-radius: 10px;
+  line-height: 1.2em;
+}
+
+.badge-new {
+  background-color: #F8B661 !important;
+  color: #fff !important;
+  font-weight: 500;
+  border-radius: 10px;
+  line-height: 1.2em;
+}
